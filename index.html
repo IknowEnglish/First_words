@@ -161,6 +161,11 @@ html{scroll-behavior:smooth}
 .finish .flags{display:block;font-size:1.6rem;letter-spacing:.2em}
 .finish b{display:block;font-weight:normal;font-size:1.6rem;color:var(--en);margin:2px 0}
 .finish span:last-child{color:var(--ru)}
+
+:root{--pr:#7b2cbf}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--pr:#c9a8ff}}
+:root[data-theme="dark"]{--pr:#c9a8ff}
+.pr{border:2.5px solid var(--pr);border-radius:999px;padding:.03em .6em;margin:0 .14em;font-weight:normal;white-space:nowrap}
 </style></head><body>
 <noscript><p style="text-align:center;padding:12px;font-family:sans-serif">Для озвучки и теста нужен включённый JavaScript.</p></noscript>
 <canvas id="fx" aria-hidden="true"></canvas>
